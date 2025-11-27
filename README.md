@@ -28,3 +28,17 @@ python3 -m http.server 8000
 - 프로젝트 상세 페이지(노트북 뷰어, 대시보드 포함) 추가
 - 실제 `resume.pdf` 업로드 및 다운로드 연결
 - 연락 폼을 서버리스 함수로 연결
+
+**프로젝트 상세 페이지 추가**
+리포지토리 루트의 `projects/` 폴더에 각 프로젝트의 상세 페이지(HTML)를 추가했습니다. 예:
+
+- `projects/titanic.html` — 타이타닉 생존자 예측 프로젝트 상세
+- `projects/sales-forecasting.html` — 판매 예측 시계열 프로젝트 상세
+- `projects/recommender.html` — 추천 시스템 프로토타입 상세
+
+`projects.json`의 `link` 필드는 이제 각 상세 페이지로 연결됩니다. 로컬에서 확인하려면 아래 명령으로 서버를 띄우고 `프로젝트` 섹션에서 카드의 "자세히 보기"를 클릭하세요.
+
+```bash
+python3 -m http.server 8000
+# 브라우저에서 http://localhost:8000/ 접속 후 '프로젝트' 섹션에서 각 프로젝트 상세 페이지로 이동
+```
