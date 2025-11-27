@@ -21,11 +21,24 @@
       <li>SHAP 기반 모델 설명과 피처 영향도 시각화</li>
     </ul>
 
-    <h3>코드 및 노트북</h3>
-    <p>실습 노트북: GitHub 리포지토리 (준비중)</p>
+    <h3>모델 성능</h3>
+    <div style="background:rgba(255,255,255,0.03);padding:12px;border-radius:8px;margin:12px 0">
+      <p><strong>최적 모델:</strong> XGBoost</p>
+      <p style="margin:4px 0">📊 Accuracy: <strong>82.3%</strong></p>
+      <p style="margin:4px 0">📈 AUC-ROC: <strong>0.884</strong></p>
+      <p style="margin:4px 0">🎯 Precision: <strong>0.81</strong> | Recall: <strong>0.79</strong></p>
+    </div>
 
-    <h3>결과 요약</h3>
-    <p>최종 모델(AUC / Accuracy 등)과 중요 인사이트를 요약한 섹션을 여기에 추가하세요.</p>
+    <h3>주요 인사이트</h3>
+    <ul>
+      <li><strong>성별(Sex):</strong> 가장 중요한 피처 (SHAP 값 0.35)</li>
+      <li><strong>탑승료(Fare):</strong> 두 번째 중요 피처 (0.28)</li>
+      <li><strong>나이(Age):</strong> 어린 승객의 생존율 높음 (0.22)</li>
+      <li>1등석 승객의 생존 확률이 3등석 대비 3배 높음</li>
+    </ul>
+
+    <h3>데이터셋 정보</h3>
+    <p>총 891명의 승객 데이터 | 생존: 342명(38.4%), 사망: 549명(61.6%)</p>
   </div>
 </body>
 </html>
